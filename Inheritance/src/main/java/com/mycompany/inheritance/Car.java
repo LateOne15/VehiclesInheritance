@@ -22,12 +22,14 @@ public class Car extends Vehicle{
     public void start() {
         System.out.println("Car is starting...");
         engine.startEngine();
+        System.out.println("Car has started.");
     }
     
     @Override
     public void stop() {
-        System.out.println("Car has stopped.");
+        System.out.println("Car is stopping...");
         engine.stopEngine();
+        System.out.println("Car has stopped.");
     }
     
     @Override

@@ -23,15 +23,21 @@ public class Plane extends Vehicle{
         System.out.println("Plane is starting...");
         System.out.println("Starting "+numberOfEngines+" engine"+ ((1<numberOfEngines) ? "s." : "."));
         for (int i = 1; i < numberOfEngines+1; i++) {
-            System.out.print("Engine "+i+" started; ");
             engine.startEngine();
+            System.out.println("Engine "+i+" started.");
         }
+        System.out.println("Plane has started.");
     }
     
     @Override
     public void stop() {
+        System.out.println("Plane is stopping...");
+        System.out.println("Stopping "+numberOfEngines+" engine"+ ((1<numberOfEngines) ? "s." : "."));
+        for (int i = 1; i < numberOfEngines+1; i++) {
+            engine.stopEngine();
+            System.out.println("Engine "+i+" stopped.");
+        }
         System.out.println("Plane has stopped.");
-        engine.stopEngine();
     }
     
     @Override

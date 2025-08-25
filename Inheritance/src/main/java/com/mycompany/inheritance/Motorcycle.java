@@ -22,12 +22,14 @@ public class Motorcycle extends Vehicle{
     public void start() {
         System.out.println("Motorcycle is starting...");
         engine.startEngine();
+        System.out.println("Motorcycle has started.");
     }
     
     @Override
     public void stop() {
-        System.out.println("Motorcycle has stopped.");
+        System.out.println("Motorcycle is stopping...");
         engine.stopEngine();
+        System.out.println("Motorcycle has stopped.");
     }
     
     @Override

@@ -50,6 +50,7 @@ public class Inheritance {
                 planeHP, engines);
         System.out.println(Airbus.getInfo());
         Airbus.start();
+        System.out.println("");
         Airbus.stop();
     }
 }
